@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandhiya M | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #1f2937;
+            scroll-behavior: smooth;
+            line-height: 1.6;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: #0f172a;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .header-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header h2 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #93c5fd;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #ffffff;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+        }
+
+        section h3 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #0f172a;
+            border-bottom: 3px solid #3b82f6;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* ===== PROJECTS & CARDS ===== */
+        .item-card {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .item-card:hover {
+            background-color: #f1f5f9;
+            transform: translateX(5px);
+        }
+
+        .item-card h4 {
+            font-size: 1.15rem;
+            color: #1e40af;
+            margin-bottom: 5px;
+        }
+
+        /* ===== SKILLS ===== */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category h5 {
+            margin-bottom: 10px;
+            color: #4b5563;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background-color: #eff6ff;
+            color: #1e3a8a;
+            padding: 6px 12px;
+            margin: 4px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px solid #dbeafe;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .date-location {
+            color: #64748b;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #0f172a;
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        footer a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>Sandhiya M</h1>
+        <h2>B.Sc Data Science Graduate</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects & Internships</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section id="about">
+    <h3>About Me</h3>
+    <p>
+B.Sc. Data Science graduate with hands-on experience in Python, SQL, and real-time data projects. Possesses a strong foundation in data analysis and visualization, with a proven ability to collaborate effectively in teams and deliver practical solutions.
+    </p>
+</section>
+
+<section id="skills">
+    <h3>Technical Skills</h3>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h5>Programming</h5>
+            <div class="skills"><span>Python</span></div>
+        </div>
+        <div class="skill-category">
+            <h5>Web & Database</h5>
+            <div class="skills"><span>HTML</span><span>SQL</span></div>
+        </div>
+        <div class="skill-category">
+            <h5>Data & ML</h5>
+            <div class="skills"><span>Data Analysis</span><span>Data Visualization</span><span>Machine Learning</span></div>
+        </div>
+        <div class="skill-category">
+            <h5>Data Tools</h5>
+            <div class="skills"><span>Tableau</span><span>Power BI</span><span>Microsoft Office</span></div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h3>Projects & Internships</h3>
+    
+    <div class="item-card">
+        <h4>Drowsiness Detection System</h4>
+        <p class="date-location">International Conference on Metaverse Technologies | 2025</p>
+        <p>Real-time Drowsinesss Detection using <strong>Python, OpenCV, dlib, Scipy, and imutils</strong> to monitor eye movements through facial landmarks and to help prevent road accidents.</p>
+    </div>
+    <div class="item-card">
+        <h4>Customer Data Analysis</h4>
+        <p class="date-location">Personal Project | 2026</p>
+        <p>Analyzed customer shopping behavior using <strong>Power BI</strong> to identify patterns across demographics and product categories. Built interactive dashboards using <strong>DAX calculations</strong> to identify key revenue drivers and provide data-driven business insights.</p>
+    </div>
+
+    <div class="item-card">
+        <h4>Medical Data History</h4>
+        <p class="date-location">Personal Project | 2026</p>
+        <p>Designed and managed medical records using <strong>SQL</strong>. Executed complex queries using JOINs, subqueries, and aggregate functions to generate accurate reports and support healthcare data insights.</p>
+    </div>
+
+    <div class="item-card">
+        <h4>Machine Learning & AI Internships</h4>
+        <p class="date-location">NoviTech R&D Private Limited, Coimbatore | 2024</p>
+        <p>Learned basic concepts of Machine Learning and Artificial Intelligence, including understanding data, models, and simple workflows.</p>
+    </div>
+
+    <div class="item-card">
+        <h4>Secure Boot Mechanism Using Hardware</h4>
+        <p class="date-location">Santy Industry, Bangalore | 2024</p>
+        <p>Contributed to hardware-based security protocols and boot mechanisms.</p>
+    </div>
+    <div class="item-card">
+        <h4>Personal portfolio</h4>
+        <p>Designed a responsive personal website to showcase projects and skills.</p>
+    </div>
+</section>
+
+<section id="education">
+    <h3>Education</h3>
+    <div class="item-card">
+        <h4>Bachelor of Science - Data Science</h4>
+        <p>Vivekanandha College of Arts and Sciences for Women (Autonomous)</p>
+        <p class="date-location">2022–2025 | CGPA: 8.04 / 10</p>
+    </div>
+    <div class="item-card">
+        <h4>Schooling (Brindavan Matriculation School)</h4>
+        <ul>
+            <li><strong>12th Grade:</strong> 77.2% (2022) </li>
+            <li><strong>10th Grade:</strong> 97.2% (2020) </li>
+        </ul>
+    </div>
+</section>
+
+<section id="certifications">
+    <h3>Training & Certifications</h3>
+    <ul>
+        <li><strong>Data Science with Python</strong> – MSME-Technology Development Centre </li>
+        <li><strong>Python Programming</strong> – Microsoft </li>
+        <li><strong>C, Python and HTML Certification</strong> – IIT Bombay </li>
+        <li><strong>UMAGINE TN GLOBAL CONFERENCE</strong>-Chennai Trade Centre</li>
+        <li><strong>E-Certificates:</strong> Data Analytics, Machine Learning, and AI Workshops </li>
+    </ul>
+</section>
+
+<section id="activities">
+    <h3>Activities & Achievements</h3>
+    <ul>
+        <li>Presented a research paper titled <strong>“Drowsiness Detection”</strong> at the International Conference on Metaverse Technologies & Cloud Computing.</li>
+        <li><strong>Throwball Player:</strong> Won prizes at Zonal and College-level competitions.</li>
+<li>Secured <strong>61% (Elite)-NPTEL</strong> in the Cloud Computing Assessment. 
+</li>
+<li>Built & deployed a <strong>personal portfolio website.</strong></li>
+    </ul>
+</section>
+
+<footer id="contact">
+    <h3>Get In Touch</h3>
+    <div class="contact-info">
+        <span>📍 Tirupattur, Tamil Nadu </span>
+        <span>📧 <a href="mailto:sandhiyamurali84@gmail.com">sandhiyamurali84@gmail.com</a></span>
+        <span>📞 +91 93615 59164 </span>
+    </div>
+    <div style="margin-top: 30px;">
+        <a href="https://www.linkedin.com/in/sandhiyamurali84"target="_blank">LinkedIn Profile</a> 
+    </div>
+    <p style="margin-top:20px; font-size: 0.8rem; opacity: 0.6;">© 2025 Sandhiya M. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
